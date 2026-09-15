@@ -8,75 +8,80 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
+
   <header class="header">
-    <button class="btn-icon"><span class="material-symbols-outlined">menu</span></button>
+    <button class="boton-menu material-symbols-outlined">menu</button>
     <h1 class="logo">CampusShop</h1>
-    <button class="btn-icon cart-btn">
-      <span class="material-symbols-outlined">shopping_cart</span>
-      <span class="badge">0</span>
-    </button>
+    <button class="boton-carro material-symbols-outlined">shopping_cart</button>
   </header>
 
   <main class="main-content">
-
-    <div class="search-bar">
-      <span class="material-symbols-outlined">search</span>
+    
+    <!-- Barra de búsqueda -->
+    <nav class="search-bar">
+      <div class="material-symbols-outlined">search</div>
       <input type="text" placeholder="Buscar productos, marcas...">
-    </div>
+    </nav>
 
+    <!-- Categorías populares -->
     <section class="categories-section">
       <h2>Categorías Populares</h2>
-      <div class="categories-grid">
-        <div class="category-card">
-          <div class="icon-circle"><span class="material-symbols-outlined">style</span></div>
-          <p>Abrigos</p>
-        </div>
-        <div class="category-card">
-          <div class="icon-circle"><span class="material-symbols-outlined">apparel</span></div>
+      <nav class="categories-grid">
+        <article class="category-card">
+          <div class="icon-circle material-symbols-outlined">headphones</div>
+          <p>Airpods</p>
+        </article>
+        <article class="category-card">
+          <div class="icon-circle material-symbols-outlined">apparel</div>
           <p>Camisetas</p>
-        </div>
-        <div class="category-card">
-          <div class="icon-circle"><span class="material-symbols-outlined">man</span></div>
+        </article>
+        <article class="category-card">
+          <div class="icon-circle material-symbols-outlined">man</div>
           <p>Pantalones</p>
-        </div>
-      </div>
+        </article>
+      </nav>
     </section>
 
+    <!-- Novedades para ti -->
     <section class="products-section">
       <h2>Novedades para ti</h2>
       <div class="products-grid">
         
+        <!-- Producto 1 -->
         <article class="product-card">
           <div class="product-image-wrapper">
             <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500" alt="Chaqueta de Cuero">
-            <button class="fav-btn"><span class="material-symbols-outlined">favorite</span></button>
+            <button class="fav-btn material-symbols-outlined">favorite</button>
           </div>
           <h3 class="product-title">Chaqueta de Cuero</h3>
           <p class="product-price">$120.00</p>
         </article>
 
+        <!-- Producto 2 -->
         <article class="product-card">
           <div class="product-image-wrapper">
             <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Camiseta Gráfica">
-            <button class="fav-btn"><span class="material-symbols-outlined">favorite</span></button>
+            <button class="fav-btn material-symbols-outlined">favorite</button>
           </div>
           <h3 class="product-title">Camiseta Gráfica</h3>
           <p class="product-price">$35.00</p>
         </article>
 
+        <!-- Producto 3 -->
         <article class="product-card">
           <div class="product-image-wrapper">
             <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500" alt="Jeans Clásicos">
-            <button class="fav-btn"><span class="material-symbols-outlined">favorite</span></button>
+            <button class="fav-btn material-symbols-outlined">favorite</button>
           </div>
           <h3 class="product-title">Jeans Clásicos</h3>
           <p class="product-price">$75.00</p>
         </article>
 
+        <!-- Producto 4 -->
         <article class="product-card">
           <div class="product-image-wrapper">
             <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500" alt="Zapatillas Retro">
-            <button class="fav-btn"><span class="material-symbols-outlined">favorite</span></button>
+            <button class="fav-btn material-symbols-outlined">favorite</button>
           </div>
           <h3 class="product-title">Zapatillas Retro</h3>
           <p class="product-price">$90.00</p>
@@ -86,6 +91,10 @@
     </section>
 
   </main>
+
+  <footer class="footer">
+    <p>© 2026 CampusShop</p>
+  </footer>
 
 </body>
 </html>

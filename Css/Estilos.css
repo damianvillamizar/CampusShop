@@ -28,14 +28,22 @@ body {
   font-weight: bold;
 }
 
-.btn-icon {
-  background: none;
+.boton-menu {
+  background: rgb(3, 113, 216);
+  color: white;
   border: none;
+  border-radius: 20%;
   cursor: pointer;
-  color: #5f6368;
+  box-shadow: 0px 2px 3px #000000
 }
 
-.cart-btn {
+.boton-carro {
+  background: rgb(3, 113, 216);
+  color: white;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px #000000;
   position: relative;
 }
 
@@ -83,7 +91,7 @@ body {
 .categories-grid {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .category-card {
@@ -100,6 +108,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 8px auto;
+  padding: 15px;
 }
 
 .category-card p {
