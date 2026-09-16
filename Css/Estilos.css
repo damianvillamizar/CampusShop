@@ -19,17 +19,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #f5f5f7;
 }
 
 .logo {
   font-size: 1.2rem;
-  color: #1a73e8;
+  color:  #0079F9;
   font-weight: bold;
 }
 
 .boton-menu {
-  background: rgb(3, 113, 216);
+  background: #571ECA;
   color: white;
   border: none;
   border-radius: 20%;
@@ -38,7 +38,7 @@ body {
 }
 
 .boton-carro {
-  background: rgb(3, 113, 216);
+  background: #571ECA;
   color: white;
   border: none;
   border-radius: 20%;
@@ -94,7 +94,7 @@ body {
   margin-bottom: 20px;
 }
 
-.category-card {
+.categoria-tarjeta{
   text-align: center;
 }
 
@@ -109,6 +109,7 @@ body {
   justify-content: center;
   margin: 0 auto 8px auto;
   padding: 15px;
+  cursor: pointer;
 }
 
 .categoria-tarjeta p {
@@ -133,7 +134,7 @@ body {
 .imagen {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* Contenedor cuadrado */
+  padding-top: 100%; 
   border-radius: 8px;
   overflow: hidden;
   background-color: #eee;
@@ -162,11 +163,8 @@ body {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.fav-btn span {
-  font-size: 18px;
-  color: #757575;
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .titulo-producto {
@@ -177,7 +175,7 @@ body {
 
 .precio-producto {
   font-size: 0.9rem;
-  color: #1a73e8;
+  color: #571ECA;
   font-weight: bold;
   margin-top: 4px;
 }
@@ -186,4 +184,8 @@ body {
   text-align:center;
   padding:10px;
   font-size: 0.85rem;
+}
+
+.boton-fav:hover {
+  transform: scale(1.15);
 }
