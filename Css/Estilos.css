@@ -7,29 +7,29 @@
 
 body {
   background-color: #f4f6f8;
-  max-width: 430px; /* Tamaño móvil relativo */
+  max-width: 430px; 
   margin: 0 auto;
   min-height: 100vh;
   color: #333;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #f5f5f7;
 }
 
 .logo {
   font-size: 1.2rem;
-  color: #1a73e8;
+  color:  #0079F9;
   font-weight: bold;
 }
 
 .boton-menu {
-  background: rgb(3, 113, 216);
+  background: #571ECA;
   color: white;
   border: none;
   border-radius: 20%;
@@ -38,13 +38,15 @@ body {
 }
 
 .boton-carro {
-  background: rgb(3, 113, 216);
+  background: #571ECA;
   color: white;
   border: none;
   border-radius: 20%;
   cursor: pointer;
   box-shadow: 0px 2px 3px #000000;
   position: relative;
+  text-decoration: none; /* Elimina el subrayado de texto del <a> */
+
 }
 
 .badge {
@@ -58,12 +60,12 @@ body {
   padding: 2px 6px;
 }
 
-/* Main */
+
 .main-content {
   padding: 16px;
 }
 
-/* Buscador */
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -82,19 +84,19 @@ body {
   width: 100%;
 }
 
-/* Categorías */
-.categories-section h2, .products-section h2 {
+
+.categorias h2, .products-section h2 {
   font-size: 1.1rem;
   margin-bottom: 16px;
 }
 
-.categories-grid {
+.cuadricula {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
 
-.category-card {
+.categoria-tarjeta{
   text-align: center;
 }
 
@@ -109,37 +111,38 @@ body {
   justify-content: center;
   margin: 0 auto 8px auto;
   padding: 15px;
+  cursor: pointer;
 }
 
-.category-card p {
+.categoria-tarjeta p {
   font-size: 0.85rem;
   color: #5f6368;
 }
 
-/* Grilla de productos */
-.products-grid {
+
+.productos-columnas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-.product-card {
+.producto-tarjeta {
   background: white;
   border-radius: 12px;
   overflow: hidden;
   padding: 10px;
 }
 
-.product-image-wrapper {
+.imagen {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* Contenedor cuadrado */
+  padding-top: 100%; 
   border-radius: 8px;
   overflow: hidden;
   background-color: #eee;
 }
 
-.product-image-wrapper img {
+.imagen img {
   position: absolute;
   top: 0;
   left: 0;
@@ -148,7 +151,7 @@ body {
   object-fit: cover;
 }
 
-.fav-btn {
+.boton-fav {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -162,22 +165,121 @@ body {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.fav-btn span {
-  font-size: 18px;
-  color: #757575;
-}
-
-.product-title {
+.titulo-producto {
   font-size: 0.85rem;
   margin-top: 8px;
   font-weight: 600;
 }
 
-.product-price {
+.precio-producto {
   font-size: 0.9rem;
-  color: #1a73e8;
+  color: #571ECA;
   font-weight: bold;
   margin-top: 4px;
+}
+
+.footer {
+  text-align:center;
+  padding:10px;
+  font-size: 0.85rem;
+}
+
+.boton-fav:hover {
+  transform: scale(1.15);
+}
+
+.boton-menu {
+  cursor: pointer;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -80%; 
+  width: 75%;  
+  max-width: 300px;
+  height: 100vh;
+  background-color: #4a2ea5; 
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.menu-lateral h2 {
+  color: #c6c7ff;
+  margin-bottom: 20px;
+}
+
+.menu-lateral nav a {
+  display: flex;
+  align-items: center;
+  gap:12px;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.menu-lateral nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+  display: none;
+}
+
+
+#toggle-menu:checked ~ .menu-lateral {
+  left: 0;
+}
+
+#toggle-menu:checked ~ .menu-overlay {
+  display: block;
+}
+
+
+.filtro-radio {
+  display: none;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+#cat-tecnologia:checked ~ .main-content .producto-tarjeta:not(.tecnologia),
+#cat-camisetas:checked ~ .main-content .producto-tarjeta:not(.camisetas),
+#cat-pantalones:checked ~ .main-content .producto-tarjeta:not(.pantalones),
+#cat-accesorios:checked ~ .main-content .producto-tarjeta:not(.accesorios) 
+{
+  display: none;
+}
+
+.enlace-producto {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
