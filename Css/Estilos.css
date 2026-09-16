@@ -201,7 +201,7 @@ body {
   width: 75%;  
   max-width: 300px;
   height: 100vh;
-  background-color: #55b89a; 
+  background-color: #4a2ea5; 
   padding: 20px;
   box-sizing: border-box;
   z-index: 1000;
@@ -209,12 +209,14 @@ body {
 }
 
 .menu-lateral h2 {
-  color: white;
+  color: #c6c7ff;
   margin-bottom: 20px;
 }
 
 .menu-lateral nav a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap:12px;
   color: white;
   text-decoration: none;
   padding: 12px;
@@ -248,3 +250,28 @@ body {
   display: block;
 }
 
+
+.filtro-radio {
+  display: none;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+#cat-tecnologia:checked ~ .main-content .producto-tarjeta:not(.tecnologia),
+#cat-camisetas:checked ~ .main-content .producto-tarjeta:not(.camisetas),
+#cat-pantalones:checked ~ .main-content .producto-tarjeta:not(.pantalones),
+#cat-accesorios:checked ~ .main-content .producto-tarjeta:not(.accesorios) 
+{
+  display: none;
+}

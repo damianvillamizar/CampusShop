@@ -8,29 +8,62 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
+  <input type="radio" name="filtro" id="cat-todos" class="filtro-radio" checked>
+  <input type="radio" name="filtro" id="cat-tecnologia" class="filtro-radio">
+  <input type="radio" name="filtro" id="cat-camisetas" class="filtro-radio">
+  <input type="radio" name="filtro" id="cat-pantalones" class="filtro-radio">
+  <input type="radio" name="filtro" id="cat-accesorios" class="filtro-radio">
   <input type="checkbox" id="toggle-menu" style="display: none;">
 
   <header class="header">
     <label for="toggle-menu" class="boton-menu material-symbols-outlined">menu</label>
     <h1 class="logo">CampusShop</h1>
-    <button class="boton-carro material-symbols-outlined">
-      shopping_cart
-      <div class="badge">3</div>
-    </button>
+    <button class="boton-carro material-symbols-outlined">shopping_cart<div class="badge">3</div></button>
   </header>
+
   <label for="toggle-menu" class="menu-overlay"></label>
 
-  <aside class="menu-lateral">
-    <h2>CampusShop</h2>
-    <nav>
-      <a href="#">Todos los productos</a>
-      <a href="#">Abrigos</a>
-      <a href="#">Camisetas</a>
-      <a href="#">Pantalones</a>
-      <a href="#">Carrito</a>
-    </nav>
-  </aside>
+ <aside class="menu-lateral">
+  <h2>CampusShop</h2>
+  <nav>
+    <label for="cat-todos" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+      <span class="material-symbols-outlined">list</span> Todos los productos
+    </label>
+    
+    <label for="cat-tecnologia" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+      <span class="material-symbols-outlined">headphones</span> Tecnología
+    </label>
+    
+    <label for="cat-camisetas" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+      <span class="material-symbols-outlined">apparel</span> Camisetas
+    </label>
+    
+    <label for="cat-pantalones" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+      <span class="material-symbols-outlined">man</span> Pantalones
+    </label>
 
+     <label for="cat-accesorios" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+      <span class="material-symbols-outlined">watch</span> Accesorios
+    </label>
+  </nav>
+</aside>
+
+  <main class="main-content">
+    <div class="contenedor-productos">
+      <article class="tarjeta-producto tecnologia">
+       
+      </article>
+      <article class="tarjeta-producto camisetas">
+    
+      </article>
+      <article class="tarjeta-producto camisetas">
+        
+      </article>
+      <article class="tarjeta-producto camisetas">
+      
+      </article>
+    </div>
+  </main>
 
   <main class="main-content">
     
@@ -40,33 +73,37 @@
     </nav>
 
     <section class="categorias">
-      <h2>Categorías Populares</h2>
-      <nav class="cuadricula">
-        <article class="categoria-tarjeta">
-          <div class="icon-circle material-symbols-outlined">headphones</div>
-          <p>Tecnologia</p>
-        </article>
-        <article class="categoria-tarjeta">
-          <div class="icon-circle material-symbols-outlined">apparel</div>
-          <p>Camisas</p>
-        </article>
-        <article class="categoria-tarjeta">
-          <div class="icon-circle material-symbols-outlined">man</div>
-          <p>Pantalones</p>
-        </article>
-        <article class="categoria-tarjeta">
-          <div class="icon-circle material-symbols-outlined">watch</div>
-          <p>Accesorios</p>
-        </article>
-      </nav>
-    </section>
+  <h2>Categorías Populares</h2>
+  <nav class="cuadricula">
+    
+    <label for="cat-tecnologia" class="categoria-tarjeta">
+      <div class="icon-circle material-symbols-outlined">headphones</div>
+      <p>Tecnología</p>
+    </label>
+
+    <label for="cat-camisetas" class="categoria-tarjeta">
+      <div class="icon-circle material-symbols-outlined">apparel</div>
+      <p>Camisetas</p>
+    </label>
+
+    <label for="cat-pantalones" class="categoria-tarjeta">
+      <div class="icon-circle material-symbols-outlined">man</div>
+      <p>Pantalones</p>
+    </label>
+
+    <label for="cat-accesorios" class="categoria-tarjeta">
+      <div class="icon-circle material-symbols-outlined">watch</div>
+      <p>Accesorios</p>
+    </label>
+  </nav>
+</section>
 
     
     <section class="products-section">
       <h2>Novedades para ti</h2>
       <div class="productos-columnas">
         
-        <article class="producto-tarjeta">
+        <article class="producto-tarjeta tecnologia">
           <div class="imagen">
             <img src="imagenes/airpods.jpg" alt="Airpods">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -75,7 +112,7 @@
           <p class="precio-producto">$120.00</p>
         </article>
 
-        <article class="producto-tarjeta">
+        <article class="producto-tarjeta camisetas">
           <div class="imagen">
             <img src="imagenes/camisa.jpg" alt="Camiseta">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -84,7 +121,7 @@
           <p class="precio-producto">$80.00</p>
         </article>
 
-        <article class="producto-tarjeta">
+        <article class="producto-tarjeta camisetas">
           <div class="imagen">
             <img src="imagenes/hoodie.jpg" alt="hoodie">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -93,7 +130,7 @@
           <p class="precio-producto">$140.00</p>
         </article>
 
-        <article class="producto-tarjeta">
+        <article class="producto-tarjeta camisetas">
           <div class="imagen">
             <img src="imagenes/camiseta2.jpg" alt="camiseta2">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -102,7 +139,7 @@
           <p class="precio-producto">$90.00</p>
         </article>
 
-        <article class="produto-tarjeta">
+        <article class="producto-tarjeta pantalones">
           <div class="imagen">
             <img src="imagenes/pantalones.jpg" alt="pantalon">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -111,7 +148,7 @@
           <p class="precio-producto">$100.00</p>
         </article>
 
-        <article classs="producto-tarjeta">
+        <article class="producto-tarjeta camisetas">
           <div class="imagen">
             <img src="imagenes/hoodie2.jpg" alt="hoodie2">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -120,7 +157,7 @@
           <p class="precio-producto">$140.00</p>
         </article>
 
-        <article classs="producto-tarjeta">
+        <article class="producto-tarjeta tecnologia">
           <div class="imagen">
             <img src="imagenes/tableta grafica.jpg" alt="tableta grafica">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -129,7 +166,7 @@
           <p class="precio-producto">$200.00</p>
         </article>
 
-        <article classs="producto-tarjeta">
+        <article class="producto-tarjeta pantalones">
           <div class="imagen">
             <img src="imagenes/pantalon2.jpg" alt="pantalon2">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -138,7 +175,7 @@
           <p class="precio-producto">$120.00</p>
         </article>
 
-        <article classs="producto-tarjeta">
+        <article class="producto-tarjeta accesorios">
           <div class="imagen">
             <img src="imagenes/collares.jpg" alt="collares">
             <button class="boton-fav material-symbols-outlined">favorite</button>
@@ -147,7 +184,7 @@
           <p class="precio-producto">$25.00</p>
         </article>
 
-        <article classs="producto-tarjeta">
+        <article class="producto-tarjeta accesorios">
           <div class="imagen">
             <img src="imagenes/cadena.jpg" alt="cadena">
             <button class="boton-fav material-symbols-outlined">favorite</button>
