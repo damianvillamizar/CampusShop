@@ -12,80 +12,133 @@
   <header class="header">
     <button class="boton-menu material-symbols-outlined">menu</button>
     <h1 class="logo">CampusShop</h1>
-    <button class="boton-carro material-symbols-outlined">shopping_cart</button>
+    <button class="boton-carro material-symbols-outlined">shopping_cart<div class="badge">0</div>
+</button>
   </header>
 
   <main class="main-content">
     
-    <!-- Barra de búsqueda -->
     <nav class="search-bar">
       <div class="material-symbols-outlined">search</div>
       <input type="text" placeholder="Buscar productos, marcas...">
     </nav>
 
-    <!-- Categorías populares -->
-    <section class="categories-section">
+    <section class="categorias">
       <h2>Categorías Populares</h2>
-      <nav class="categories-grid">
-        <article class="category-card">
+      <nav class="cuadricula">
+        <article class="categoria-tarjeta">
           <div class="icon-circle material-symbols-outlined">headphones</div>
-          <p>Airpods</p>
+          <p>Tecnologia</p>
         </article>
-        <article class="category-card">
+        <article class="categoria-tarjeta">
           <div class="icon-circle material-symbols-outlined">apparel</div>
-          <p>Camisetas</p>
+          <p>Camisas</p>
         </article>
-        <article class="category-card">
+        <article class="categoria-tarjeta">
           <div class="icon-circle material-symbols-outlined">man</div>
           <p>Pantalones</p>
+        </article>
+        <article class="categoria-tarjeta">
+          <div class="icon-circle material-symbols-outlined">watch</div>
+          <p>Accesorios</p>
         </article>
       </nav>
     </section>
 
-    <!-- Novedades para ti -->
+    
     <section class="products-section">
       <h2>Novedades para ti</h2>
-      <div class="products-grid">
+      <div class="productos-columnas">
         
-        <!-- Producto 1 -->
-        <article class="product-card">
-          <div class="product-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500" alt="Chaqueta de Cuero">
-            <button class="fav-btn material-symbols-outlined">favorite</button>
+        <article class="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/airpods.jpg" alt="Airpods">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
           </div>
-          <h3 class="product-title">Chaqueta de Cuero</h3>
-          <p class="product-price">$120.00</p>
+          <h3 class="titulo-producto">Airpods</h3>
+          <p class="precio-producto">$120.00</p>
         </article>
 
-        <!-- Producto 2 -->
-        <article class="product-card">
-          <div class="product-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Camiseta Gráfica">
-            <button class="fav-btn material-symbols-outlined">favorite</button>
+        <article class="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/camisa.jpg" alt="Camiseta">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
           </div>
-          <h3 class="product-title">Camiseta Gráfica</h3>
-          <p class="product-price">$35.00</p>
+          <h3 class="titulo-producto">Camiseta</h3>
+          <p class="precio-producto">$80.00</p>
         </article>
 
-        <!-- Producto 3 -->
-        <article class="product-card">
-          <div class="product-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500" alt="Jeans Clásicos">
-            <button class="fav-btn material-symbols-outlined">favorite</button>
+        <article class="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/hoodie.jpg" alt="hoodie">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
           </div>
-          <h3 class="product-title">Jeans Clásicos</h3>
-          <p class="product-price">$75.00</p>
+          <h3 class="titulo-producto">Hoodie</h3>
+          <p class="precio-producto">$140.00</p>
         </article>
 
-        <!-- Producto 4 -->
-        <article class="product-card">
-          <div class="product-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500" alt="Zapatillas Retro">
-            <button class="fav-btn material-symbols-outlined">favorite</button>
+        <article class="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/camiseta2.jpg" alt="camiseta2">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
           </div>
-          <h3 class="product-title">Zapatillas Retro</h3>
-          <p class="product-price">$90.00</p>
+          <h3 class="titulo-producto">camiseta</h3>
+          <p class="precio-producto">$90.00</p>
         </article>
+
+        <article class="produto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/pantalones.jpg" alt="pantalon">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Pantalón</h3>
+          <p class="precio-producto">$100.00</p>
+        </article>
+
+        <article classs="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/hoodie2.jpg" alt="hoodie2">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Hoodie</h3>
+          <p class="precio-producto">$140.00</p>
+        </article>
+
+        <article classs="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/tableta grafica.jpg" alt="tableta grafica">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Tableta Gráfica</h3>
+          <p class="precio-producto">$200.00</p>
+        </article>
+
+        <article classs="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/pantalon2.jpg" alt="pantalon2">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Pantalón</h3>
+          <p class="precio-producto">$120.00</p>
+        </article>
+
+        <article classs="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/collares.jpg" alt="collares">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Collares</h3>
+          <p class="precio-producto">$25.00</p>
+        </article>
+
+        <article classs="producto-tarjeta">
+          <div class="imagen">
+            <img src="imagenes/cadena.jpg" alt="cadena">
+            <button class="boton-fav material-symbols-outlined">favorite</button>
+          </div>
+          <h3 class="titulo-producto">Cadena</h3>
+          <p class="precio-producto">$30.00</p>
+        </article> 
 
       </div>
     </section>
