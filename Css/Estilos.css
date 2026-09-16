@@ -189,3 +189,62 @@ body {
 .boton-fav:hover {
   transform: scale(1.15);
 }
+
+.boton-menu {
+  cursor: pointer;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -80%; 
+  width: 75%;  
+  max-width: 300px;
+  height: 100vh;
+  background-color: #55b89a; 
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.menu-lateral h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.menu-lateral nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.menu-lateral nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+  display: none;
+}
+
+
+#toggle-menu:checked ~ .menu-lateral {
+  left: 0;
+}
+
+#toggle-menu:checked ~ .menu-overlay {
+  display: block;
+}
+
