@@ -277,3 +277,9 @@ body {
 {
   display: none;
 }
+
+.enlace-producto {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
