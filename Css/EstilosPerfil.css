@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   
+  body {
+    background-color: #f2f2f2;
+    max-width: 430px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    margin: 0 auto;/* espacio para la barra inferior */
+  }
+   
+  .perfil-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 200px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+   
+  .perfil-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .btn-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #571ECA;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .perfil-titulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+  }
+   
+  .perfil-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #571ECA;
+    border: 3px solid  #041977;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+  }
+   
+  .perfil-nombre {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+  }
+   
+  .perfil-email {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+  }
+   
+  .perfil-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+   
+  .opcion-card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 18px 10px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+  }
+   
+  .opcion-card:hover {
+    background-color: #ececec;
+  }
+   
+  .opcion-icono {
+    font-size: 22px;
+  }
+   
+  .cerrar-sesion {
+    color: #e63946;
+  }
