@@ -1,4 +1,3 @@
-
 .body-historial {
   background-color: #121212;
   margin: 0;
@@ -6,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .modal-historial {
@@ -102,4 +103,81 @@
 .nav-item.active {
   color: #4a038d;
   font-weight: 700;
+}
+
+
+/* =================================
+   RESPONSIVE: TABLET
+================================= */
+
+@media (min-width: 768px) {
+
+  .modal-historial {
+    max-width: 900px;
+    max-height: 1200px;
+  }
+
+  .header-modal-historial {
+    padding: 20px 28px;
+  }
+
+  .header-modal-historial h2 {
+    font-size: 1.3rem;
+  }
+
+  .icono-vacio {
+    font-size: 80px;
+  }
+
+  .mensaje-vacio {
+    font-size: 1.15rem;
+    max-width: 400px;
+  }
+
+  .btn-ir-comprar {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;
+  }
+
+  .nav-item .material-symbols-outlined {
+    font-size: 26px;
+  }
+}
+
+
+/* =================================
+   RESPONSIVE: COMPUTADOR
+================================= */
+
+@media (min-width: 1200px) {
+
+  .modal-historial {
+    max-width: 680px;
+    max-height: 820px;
+  }
+
+  .header-modal-historial {
+    padding: 24px 32px;
+  }
+
+  .cuerpo-vacio {
+    padding: 40px;
+  }
+
+  .btn-ir-comprar {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-ir-comprar:hover {
+    background-color: #4a038d;
+  }
+
+  .nav-item {
+    cursor: pointer;
+  }
 }
