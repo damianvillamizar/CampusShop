@@ -99,13 +99,14 @@
 .tallas-box label {
   display: block;
   font-size: 0.75rem;
-  color: #888888;
+  color: #0c0c0c;
   margin-bottom: 8px;
 }
 
 .tallas-opciones {
   display: flex;
-  gap: 8px;
+  gap: 10px;
+  align-items: center;
 }
 
 .radio-hidden {
@@ -128,16 +129,16 @@
 }
 
 .radio-hidden:checked + .btn-talla-label {
-  background-color: #1b4d3e;
+  background-color: #467ad4;
   color: #ffffff;
-  border-color: #1b4d3e;
+  border-color: #0e4460;
 }
 
 
 .btn-agregar-carro {
   display: block;
   width: 100%;
-  background-color: #044077;
+  background-color: #041977;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
