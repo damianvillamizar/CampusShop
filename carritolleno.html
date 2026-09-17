@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mi Carrito - CampusShop</title>
+
+  <link rel="stylesheet" href="Css/Estiloscarrito.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="body-carrito">
+
+  <main class="tarjeta-carrito-modal carrito-con-productos">
+    <header class="header-carrito">
+      <a href="Index.html"
+         class="btn-volver material-symbols-outlined">
+        arrow_back
+      </a>
+      <h2>Mi Carrito (3)</h2>
+    </header>
+
+    <section class="productos-carrito">
+
+      <article class="producto-carrito">
+
+        <img
+          src="imagenes/airpods.jpg"
+          alt="airpods"
+          class="imagen-producto"
+        >
+
+        <div class="info-producto">
+          <h3>
+            Airpods
+          </h3>
+          <span class="referencia">
+            Ref: #SKU12345
+          </span>
+          <div class="cantidad-producto">
+            <button type="button">
+              −
+            </button>
+            <span>2</span>
+            <button type="button">
+              +
+            </button>
+          </div>
+        </div>
+
+        <div class="precio-producto">
+          <button
+            class="btn-eliminar"
+            type="button">
+            <span class="material-symbols-outlined">
+              delete_outline
+            </span>
+          </button>
+          <strong>
+            $120.00
+          </strong>
+          <small>
+            subtotal
+          </small>
+        </div>
+      </article>
+
+      <article class="producto-carrito">
+        <img
+          src="imagenes/hoodie.jpg"
+          alt="hoodie"
+          class="imagen-producto">
+        <div class="info-producto">
+          <h3>Hoodie</h3>
+
+          <span class="referencia">
+            Ref: #SKU67890
+          </span>
+
+          <div class="cantidad-producto">
+
+            <button type="button">
+              −
+            </button>
+            <span>1</span>
+
+            <button type="button">+</button>
+          </div>
+        </div>
+
+        <div class="precio-producto">
+          <button
+            class="btn-eliminar"
+            type="button">
+            <span class="material-symbols-outlined">
+              delete_outline
+            </span>
+          </button>
+
+          <strong>
+            $140.00
+          </strong>
+
+          <small>
+            subtotal
+          </small>
+        </div>
+
+      </article>
+
+      <article class="producto-carrito">
+        <img
+          src="imagenes/tableta grafica.jpg"
+          alt="Tableta Grafica"
+          class="imagen-producto">
+        <div class="info-producto">
+          <h3>Tableta Grafica</h3>
+
+          <span class="referencia">
+            Ref: #SKU11223
+          </span>
+
+          <div class="cantidad-producto">
+
+            <button type="button">
+              −
+            </button>
+
+            <span>1</span>
+            <button type="button">+</button>
+
+          </div>
+
+        </div>
+
+        <div class="precio-producto">
+          <button
+            class="btn-eliminar"
+            type="button">
+            <span class="material-symbols-outlined">
+              delete_outline
+            </span>
+          </button>
+
+          <strong>
+            $200.00
+          </strong>
+
+          <small>
+            subtotal
+          </small>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <section class="resumen-carrito">
+      <div class="fila-resumen">
+        <span>
+          Subtotal
+        </span>
+        
+        <strong>
+          $460.00
+        </strong>
+      </div>
+
+      <div class="fila-resumen">
+        <span>
+          Impuestos IVA
+        </span>
+
+        <strong>
+          $19%
+        </strong>
+
+      </div>
+
+      <div class="fila-total">
+        <span>
+          Total
+        </span>
+
+        <strong>
+          $547.40
+        </strong>
+
+      </div>
+
+      <button
+        class="btn-pago"
+        type="button"
+      >
+        Proceder al Pago
+      </button>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
