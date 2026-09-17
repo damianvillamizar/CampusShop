@@ -13,6 +13,7 @@
   <input type="radio" name="filtro" id="cat-camisetas" class="filtro-radio">
   <input type="radio" name="filtro" id="cat-pantalones" class="filtro-radio">
   <input type="radio" name="filtro" id="cat-accesorios" class="filtro-radio">
+  <input type="radio" name="filtro" id="cat-historial" class="filtro-radio">
   <input type="checkbox" id="toggle-menu" style="display: none;">
 
   <header class="header">
@@ -48,25 +49,12 @@
      <label for="cat-accesorios" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
       <span class="material-symbols-outlined">watch</span> Accesorios
     </label>
+
+    <a href="historialvacio.html" class="item-menu" onclick="document.getElementById('toggle-menu').checked = false;">
+    <span class="material-symbols-outlined">nest_clock_farsight_analog</span>Historial de compras</a>
+    
   </nav>
 </aside>
-
-  <main class="main-content">
-    <div class="contenedor-productos">
-      <article class="tarjeta-producto tecnologia">
-       
-      </article>
-      <article class="tarjeta-producto camisetas">
-    
-      </article>
-      <article class="tarjeta-producto camisetas">
-        
-      </article>
-      <article class="tarjeta-producto camisetas">
-      
-      </article>
-    </div>
-  </main>
 
   <main class="main-content">
     
@@ -84,7 +72,7 @@
       <p>Tecnología</p>
     </label>
 
-    <label for="cat-camisetas" class="categoria-tarjeta">
+    <label for="cat-camisetas" class="categoria-tarjeta"> 
       <div class="icon-circle material-symbols-outlined">apparel</div>
       <p>Camisetas</p>
     </label>
