@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+}
+
+
+/*FONDO*/
+
+.body-perfil {
+
+    min-height: 100vh;
+
+    background-color: #f4f6f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* TARJETA*/
+
+.tarjeta-login {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    min-height: 650px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* HEADER*/
+
+.header-login {
+
+    height: 67px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.btn-volver-login {
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.header-login h2 {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #111111;
+}
+
+
+/* CONTENIDO*/
+
+.contenido-login {
+
+    padding: 35px 30px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/*ICONO PERFIL*/
+
+.icono-perfil {
+
+    width: 82px;
+
+    height: 82px;
+
+    border-radius: 50%;
+
+    background-color: #e7efff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+
+.icono-perfil span {
+
+    font-size: 48px;
+
+    color: #102694;
+}
+
+
+/*TÍTULOS*/
+
+.contenido-login h1 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 7px;
+}
+
+
+.texto-login {
+
+    font-size: 13px;
+
+    color: #777777;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/*FORMULARIO*/
+
+.form-login {
+
+    width: 100%;
+}
+
+
+/*CAMPOS*/
+
+.campo-login {
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+.campo-login label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #222222;
+
+    margin-bottom: 7px;
+}
+
+
+/*INPUT CON ICONO*/
+
+.input-con-icono {
+
+    width: 100%;
+
+    height: 46px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 9px;
+
+    background-color: #fafafa;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 13px;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.input-con-icono:focus-within {
+
+    border-color: #102694;
+
+    box-shadow:
+        0 0 0 3px rgba(16, 38, 148, 0.08);
+}
+
+
+.input-con-icono span {
+
+    font-size: 20px;
+
+    color: #7b7b7b;
+
+    margin-right: 9px;
+}
+
+
+.input-con-icono input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #222222;
+}
+
+
+.input-con-icono input::placeholder {
+
+    color: #aaaaaa;
+}
+
+
+/*OPCIONES*/
+
+.opciones-login {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 3px 0 23px;
+
+    font-size: 11px;
+}
+
+
+.recordarme {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #666666;
+
+    cursor: pointer;
+}
+
+
+.recordarme input {
+
+    accent-color: #102694;
+
+    cursor: pointer;
+}
+
+
+.opciones-login a {
+
+    color: #102694;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.opciones-login a:hover {
+
+    text-decoration: underline;
+}
+
+
+/*BOTÓN INICIAR*/
+
+.btn-iniciar {
+
+    width: 100%;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #102694;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.btn-iniciar:hover {
+
+    background-color: #0b1c75;
+}
+
+
+/*REGISTRO*/
+
+.registro-login {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    gap: 5px;
+
+    font-size: 12px;
+
+    color: #777777;
+
+    justify-content: center;
+}
+
+
+.registro-login a {
+
+    color: #102694;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+.registro-login a:hover {
+
+    text-decoration: underline;
+}
+
+
+/*Arreglar para dispositivos*/
+
+@media (max-width: 500px) {
+
+    .body-perfil {
+
+        padding: 0;
+
+    }
+
+    .tarjeta-login {
+
+        min-height: 100vh;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+    }
+
+    .contenido-login {
+
+        padding: 35px 24px;
+    }
+}
