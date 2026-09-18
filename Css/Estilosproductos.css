@@ -108,25 +108,31 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  
+  
 }
 
 .radio-hidden {
   display: none;
 }
 
+
 .btn-talla-label {
   width: 34px;
   height: 34px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ffffff;
+  color: #333333;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
-  color: #333333;
-  background-color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 34px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .radio-hidden:checked + .btn-talla-label {
