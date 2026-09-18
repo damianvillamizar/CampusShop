@@ -117,9 +117,9 @@
 }
 
 .radio-pago-oculto:checked + .contenido-pago {
-  border: 1.5px solid #1b4d3e;
-  background-color: #f0fdf4;
-  color: #1b4d3e;
+  border: 1.5px solid #4208a5;
+  background-color: #c7e5f4;
+  color: #506bae;
 }
 
 
@@ -132,7 +132,7 @@
 .tarjeta-resumen-orden h3 {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #063787;
   margin: 0 0 12px 0;
 }
 
@@ -196,7 +196,7 @@
 
 .linea-total-resumen .monto-total {
   font-size: 0.95rem;
-  color: #1b4d3e;
+  color: #11436a;
 }
 
 
