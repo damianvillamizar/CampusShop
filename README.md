@@ -4,23 +4,42 @@ Bienvenido a la documentación de **CampusShop**, la maquetación web de la inte
 
 ## ESTRUCTURA DE ARCHIVOS
 
-CampusShop/
- ├── index.html. # [Home / Inicio](Index.html): Pantalla principal con buscador, categorías y productos destacados.
- ├── catalogo.html #  [Catálogo](Index.html): Malla responsive de productos con filtros visuales.
- ├── producto.html # [Detalle de Producto](Airpods.html): Vista de producto con imágenes, características, selección de opciones y relacionados.
- ├── carrito.html # [Carrito de Compras](carritolleno.html): Resumen visual de artículos seleccionados y desglose de costos.
- ├── checkout.html # [Checkout](checkout.html): Formulario de compra, datos de envío y resumen de orden.
- ├── perfil.html # [Perfil de Usuario](perfil.html): Información de la cuenta, configuraciones y accesos directos.
- ├── historial.html # [Historial de Pedidos](historiallleno.html): Listado y estado de compras anteriores.
- ├── vacio.html # [Estado Vacío / Error](vacio.html): Pantalla de retorno con ilustración y guía al catálogo.
- ├── css/
- │    ├── base.css
- │    ├── layout.css
- │    ├── components.css
- │    └── responsive.css
- └── img/
-      └── (imágenes de productos)
+[Home / Inicio](Index.html): Pantalla principal con buscador, categorías y productos destacados.
 
+[Catálogo](Index.html): Malla responsive de productos con filtros visuales.
+
+[Detalle de Producto](Airpods.html): Vista de producto con imágenes, características, selección de opciones y relacionados.
+
+[Carrito de Compras](carritolleno.html): Resumen visual de artículos seleccionados y desglose de costos.
+
+[Checkout](checkout.html): Formulario de compra, datos de envío y resumen de orden.
+
+[Perfil de Usuario](perfil.html): Información de la cuenta, configuraciones y accesos directos.
+
+[Historial de Pedidos](historiallleno.html): Listado y estado de compras anteriores.
+
+[Estado Vacío / Error](mantenimiento.html): Pantalla de retorno con ilustración y guía al catálogo.
+
+
+
+```text
+CampusShop/
+├── index.html
+├── catalogo.html
+├── producto.html
+├── carrito.html
+├── checkout.html
+├── perfil.html
+├── historial.html
+├── vacio.html
+├── css/
+│   ├── base.css
+│   ├── layout.css
+│   ├── components.css
+│   └── responsive.css
+└── img/
+    └── (imágenes de productos)
+```
 ## ARQUITECTURA Y TECNOLOGIAS
 
 El desarrollo fue construido respetando estrictamente los requisitos técnicos solicitados:
