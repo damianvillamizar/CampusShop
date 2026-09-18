@@ -196,23 +196,94 @@
   color: #111111;
 }
 
+/* =================================
+   RESPONSIVE: CELULAR
+================================= */
+
+@media (max-width: 767px) {
+
+  .modal-detalle {
+    width: 100%;
+    max-width: 420px;
+    height: 90vh;
+    max-height: 780px;
+    flex-direction: column;
+  }
+
+  .header-modal-detalle {
+    padding: 14px 16px;
+  }
+
+  .cuerpo-scroll {
+    display: block;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+
+  .area-imagen {
+    width: 100%;
+    height: 220px;
+  }
+
+  .seccion-info {
+    width: auto;
+    padding: 20px;
+  }
+
+  .seccion-info h1 {
+    font-size: 1.2rem;
+  }
+
+  .precio-txt {
+    font-size: 1.15rem;
+  }
+
+  .desc-txt {
+    font-size: 0.82rem;
+  }
+
+  .seccion-relacionados {
+    width: auto;
+    padding: 0 20px 20px 20px;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .item-relacionado img {
+    height: 100px;
+  }
+}
+
 
 /* =================================
    RESPONSIVE: TABLET
 ================================= */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
   .modal-detalle {
-    max-width: 900px;
-    max-height: 1200px;
+    width: 90%;
+    max-width: 700px;
+    height: 90vh;
+    max-height: 800px;
+    flex-direction: column;
+  }
+
+  .cuerpo-scroll {
+    display: block;
+    overflow-y: auto;
   }
 
   .area-imagen {
-    height: 320px;
+    width: 100%;
+    height: 280px;
   }
 
   .seccion-info {
+    width: auto;
     padding: 24px 28px;
   }
 
@@ -235,7 +306,12 @@
   }
 
   .seccion-relacionados {
-    padding: 0 28px;
+    width: auto;
+    padding: 0 28px 24px 28px;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .item-relacionado img {
@@ -248,11 +324,13 @@
    RESPONSIVE: COMPUTADOR
 ================================= */
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
   .modal-detalle {
+    width: 90%;
     max-width: 760px;
-    max-height: 820px;
+    height: 820px;
+    max-height: 90vh;
     flex-direction: row;
   }
 
@@ -261,21 +339,24 @@
     flex-wrap: wrap;
     align-content: flex-start;
     padding-bottom: 0;
+    overflow-y: auto;
   }
 
   .area-imagen {
     width: 45%;
-    height: auto;
+    height: 320px;
   }
 
   .seccion-info {
     width: 55%;
     padding: 28px 32px;
+    box-sizing: border-box;
   }
 
   .seccion-relacionados {
     width: 100%;
     padding: 0 32px 24px 32px;
+    box-sizing: border-box;
   }
 
   .grid-productos {
